@@ -42,6 +42,7 @@ header {
 
 
 
+
 .logo {
     font-size: 3rem;
     color: rgba(255, 220, 113, 1);
@@ -65,7 +66,7 @@ nav a {
 
 nav a:hover, nav a.active {
     color: rgba(255, 220, 113, 1);
-    border-bottom: 3px solid rgba(255, 220, 113, 1);
+    border-bottom: 3px solid rgba(255, 220, 113, 0.8);
 }
 
 .hamburger {
@@ -196,14 +197,14 @@ span:hover {
 .hidden{
     opacity: 0;
     transform: translateX( -100px);
-    filter: blur(5px);
     transition: all 0.5s ease;
 }
 
 .show{
     opacity: 1;
     transform:  translateX(0);
-    filter: blur(0);
+    transition: all 1.2s ease;
+
 }
 
 .remove{
@@ -312,23 +313,40 @@ span:hover {
 
 /* Space Element */
 .space {
-    height: 200px;
+    height: 100px;
 }
 
 
 
 /* Responsive Styles */
 @media (max-width: 940px) {
+
+
+    header{
+        background-color: rgb(0, 0, 0,0.7);
+    }
+    .headerborder{
+        border-bottom: 3px solid rgba(255, 220, 113, 0.7);
+
+    }
     nav {
         display: none;
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
-        background-color: black;
-        border-left: 3px solid rgba(255, 220, 113, 1);
+        width: 100%;
+        background-color: rgb(0, 0, 0,0.7);
+        border-bottom: 3px solid rgba(255, 220, 113, 0.7);
         padding: 1rem;
+        text-align: center;
     }
+
+    nav a:hover, nav a.active {
+        color: rgba(255, 220, 113, 1);
+        border-bottom: 3px solid rgba(255, 220, 113, 0);
+    }
+   
+
     .Home-img{
         margin-top: 60px;
     }
