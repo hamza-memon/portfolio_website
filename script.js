@@ -9,8 +9,11 @@ $(document).ready(function () {
 
 $(".hamburger").click(function () {
         $("nav").slideToggle("active");
-        $("header").toggleClass("headerborder")
     });
+
+  $("nav a").click(function(){
+    $("nav").slideToggle("active");
+  })
 
 
 
